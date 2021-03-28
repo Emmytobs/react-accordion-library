@@ -1,23 +1,20 @@
 {
-  "name": "accordion-component",
+  "name": "react-accordion-library",
   "version": "1.0.0",
-  "description": "A fully composable React accordion component",
-  "keywords": ["react", "starter"],
+  "description": "A fully composable and extendable React accordion component",
+  "keywords": ["react", "javascript", "accordion", "component"],
   "main": "src/index.js",
-  "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "4.0.0"
-  },
-  "devDependencies": {
-    "@babel/runtime": "7.13.8",
-    "typescript": "4.1.3"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "author": "Emmanuel Otobo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmytobs/react-accordion-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Emmytobs/react-accordion-library/issues",
+    "email": "real4emmydee@gmail.com"
+  },
+  "homepage": "https://github.com/Emmytobs/react-accordion-library#readme"
 }
