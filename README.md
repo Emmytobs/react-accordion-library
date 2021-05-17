@@ -36,7 +36,7 @@ The `AccordionItem` component is designed using the render props approach of rea
 Example:
 
 ```javascript
-import { Accordion, AccordionItem } from "../Shared/Utilities/Accordion";
+import { Accordion, AccordionItem } from "react-accordion-library";
 function CustomAccordion() {
   return (
     <Accordion>
@@ -104,8 +104,8 @@ Example:
 A full example of an accordion built using this package is shown below:
 
 ```javascript
-import { Accordion, AccordionItem, Title, Content } from 'react-accordion-library;
-import arrowUp from './arrow-up-icon.png'
+import { Accordion, AccordionItem, Title, Content } from "react-accordion-library";
+import arrowUp from "./arrow-up-icon.png"
 
 function CustomeAccordion() {
     return (
@@ -142,8 +142,8 @@ function CustomeAccordion() {
 Since you will need to have multiple AccordionItem components under the parent Accordion component, it will be easier to arrange the dynamic parts of each accordion item in an array of objects instead of having many AccordionItem siblings:
 
 ```javascript
-import { Accordion, AccordionItem, Title, Content } from 'react-accordion-library;
-import arrowUp from './arrow-up-icon.png
+import { Accordion, AccordionItem, Title, Content } from "react-accordion-library";
+import arrowUp from "./arrow-up-icon.png" // Assume it is an image stored in your project
 
 function CustomeAccordion() {
 
