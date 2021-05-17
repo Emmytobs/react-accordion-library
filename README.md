@@ -13,7 +13,7 @@ There are four components that can be used to create custom accordions. Starting
 
 ## Accordion
 
-The `Accordion` component is the top-level component, it provides a wrapper around the `AccordionItem` component.
+The `Accordion` component is the top-level component. It provides a wrapper around the `AccordionItem` component.
 
 ```javascript
 import { Accordion } from "react-accordion-library";
@@ -31,7 +31,7 @@ function CustomAccordion() {
 ## AccordionItem
 
 The `AccordionItem` component is the direct child under `Accordion` component. You must have at least one `AccordionItem` component nested within the top-level Accordion component, else you will get an error.
-The `AccordionItem` component is designed using the render props approach of react component design. It takes a function as it's direct child which is called in the Accordion component and passed an argument 'contentIsVisible', and returns some JSX. The argument has a boolean value and it represents a piece of state that tells the AccordionItem whether it has been clicked on or not, which tells the component to collapse the `Content` or not to. This also means you can also use the contentIsVisible argument to implement certain visual cues when the accordion item has been collapsed or not. For example, you can set an arrow icon to point upwards or downwards depending on the whether the cotent is visible (or is unfolded) or not visible (or is collapsed)
+The `AccordionItem` component is designed using the render props approach of react component design. It takes a function as its direct child which is called in the Accordion component and passed an argument 'contentIsVisible', and returns some JSX. The argument has a boolean value and it represents a piece of state that tells the AccordionItem whether it has been clicked on or not, which tells the component to collapse the `Content` or not to. This also means you can also use the contentIsVisible argument to implement certain visual cues when the accordion item has been collapsed or not. For example, you can set an arrow icon to point upwards or downwards depending on the whether the content is visible (or is unfolded) or not visible (or is collapsed)
 
 Example:
 
@@ -101,7 +101,7 @@ Example:
 </AccordionItem>
 ```
 
-A full example of accordion built using this package is shown below:
+A full example of an accordion built using this package is shown below:
 Example:
 
 ```javascript
@@ -140,7 +140,7 @@ function CustomeAccordion() {
 }
 ```
 
-Since you will need to have multiple AccordionItem components under the parent Accordion component, it can be easier to arrange the dynamic parts of each accordion item in an array of objects instead of having many AccordionItem siblings:
+Since you will need to have multiple AccordionItem components under the parent Accordion component, it will be easier to arrange the dynamic parts of each accordion item in an array of objects instead of having many AccordionItem siblings:
 
 ```javascript
 import { Accordion, AccordionItem, Title, Content } from 'react-accordion-library;
