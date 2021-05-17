@@ -11,6 +11,8 @@ export function Accordion(props) {
     })
     const [visibleContentByIndex, setVisibleContentByIndex] = useState(visibleContentByIndexForItems)
 
+    // if (props.children.length === 1) throw Error('<Accordion> component requires more than one <AccordionItem> child component')
+
     return (
         <div className={styles.accordionContainer} style={{ ...props }}>
             {
