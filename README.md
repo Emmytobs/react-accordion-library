@@ -102,11 +102,10 @@ Example:
 ```
 
 A full example of an accordion built using this package is shown below:
-Example:
 
 ```javascript
 import { Accordion, AccordionItem, Title, Content } from 'react-accordion-library;
-import arrowUp from './arrow-up-icon.png
+import arrowUp from './arrow-up-icon.png'
 
 function CustomeAccordion() {
     return (
