@@ -159,36 +159,36 @@ function CustomeAccordion() {
     ]
 
     return (
-        <Accordion>
-            {
-                accordionItems.map((item, index) => {
-                    return (
-                        <AccordionItem key={index}>
-                            {
-                                (contentIsVisible) => (
-                                    <div>
-                                        <Title>
-                                            <div style={{ display: flex, justifyContent: 'space-between', alignItems: 'center' }}>
-                                                <p>{item.title}</p>
-                                                <img
-                                                    src={arrowUp}
-                                                    style={{
-                                                        transform: contentIsVisible ? 'rotate(0deg)' : 'rotate(90deg)'  // Points downwards when the item is hidden
-                                                    }}
-                                                />
-                                            </div>
-                                        </Title>
-                                        <Content>
-                                            <p>{item.content}</p>
-                                        </Content>
-                                    </div>
-                                )
-                            }
-                        </AccordionItem>
+      <Accordion>
+        {
+          accordionItems.map((item, index) => {
+              return (
+                <AccordionItem key={index}>
+                  {
+                    (contentIsVisible) => (
+                      <div>
+                        <Title>
+                          <div style={{ display: flex, justifyContent: 'space-between', alignItems: 'center' }}>
+                              <p>{item.title}</p>
+                              <img
+                                  src={arrowUp}
+                                  style={{
+                                      transform: contentIsVisible ? 'rotate(0deg)' : 'rotate(180deg)'  // Points downwards when the item is hidden (or when contentIsVisible is false)
+                                  }}
+                              />
+                          </div>
+                        </Title>
+                        <Content>
+                          <p>{item.content}</p>
+                        </Content>
+                      </div>
                     )
-                })
-            }
-        </Accordion>
+                  }
+                </AccordionItem>
+              )
+          })
+        }
+      </Accordion>
     )
 }
 ```
