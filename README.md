@@ -2,6 +2,8 @@
 
 A fully-featured, composable and extendable React accordion library.
 
+#### Note: This package was built using the react hooks API introduced in React 16, which means react versions prior to that are not compatible with this package.
+
 # Documentation
 
 There are four components that can be used to create custom accordions. Starting from top to bottom:
